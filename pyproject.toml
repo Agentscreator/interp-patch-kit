@@ -1,0 +1,21 @@
+[project]
+name = "interp-patch-kit"
+version = "0.1.0"
+description = "Activation patching sweeps for transformer language models, built on TransformerLens."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "transformer-lens>=4.0",
+    "torch",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["interp_patch_kit"]
